@@ -18,7 +18,7 @@ var clean = require('gulp-clean');
 
 var paths = {
     sass: ['./dev/sass/**/*.scss'],
-    templatecache: ['./dev/js/**/*.html'],
+    templatecache: ['./dev/**/*.html'],
     index:['./dev/index.html']
 };
 
@@ -57,6 +57,7 @@ gulp.task('reload', function (done) {
 
 gulp.task('connect', function() {
     connect.server({
+        port: 8888,
         livereload: true
     });
 });
