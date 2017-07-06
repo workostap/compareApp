@@ -1,0 +1,16 @@
+<div class="row">
+    <div class="col-sm-6">
+        <div class="form-group">
+            <label for="comment">Text 1</label>
+            <textarea class="form-control" rows="5" id="comment" ng-model="compareText.compareEntity.text1"></textarea>
+        </div>
+        <button class="btn btn-primary" ng-click="compareText.compareEntity.splitTexts()">Check</button>
+    </div>
+    <div class="col-sm-6">
+        <div class="form-group">
+            <label for="comment1">Text 2</label>
+            <textarea class="form-control" rows="5" id="comment1" ng-model="compareText.compareEntity.text2"></textarea>
+        </div>
+    </div>
+</div>
+<compare-text result="compareText.compareEntity.result" ng-if="compareText.compareEntity.result.length !== 0"></compare-text>

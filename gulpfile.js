@@ -9,13 +9,6 @@ var connect = require('gulp-connect');
 var autoprefixer = require('gulp-autoprefixer');
 var clean = require('gulp-clean');
 
-// var ENV = process.env.ENV;
-//
-// if (!ENV || (!(ENV == 'mobile' || ENV == 'web'))) {
-//     console.error("ERROR: You don't specify or incorrectly specify a variable ENV (must be 'web' or 'mobile'). For example: 'ENV=web gulp watch'");
-//     return false;
-// }
-
 var paths = {
     sass: ['./dev/sass/**/*.scss'],
     templatecache: ['./dev/**/*.html'],
